@@ -21,6 +21,26 @@ const InputShortener = ({ setInputValue }) => {
         />
         <button onClick={handleClick}>Submit</button>
       </div>
+      <div className="domain">
+        <p>Short domain:</p>
+        <input
+          type="radio"
+          id="domain1"
+          name="domain"
+          value="shrtco.de"
+          defaultChecked
+        ></input>
+        <label for="domain1">shrtco.de</label>
+        <input type="radio" id="domain2" name="domain" value="9qr.de"></input>
+        <label for="domain2">9qr.de</label>
+        <input
+          type="radio"
+          id="domain3"
+          name="domain"
+          value="shiny.link"
+        ></input>
+        <label for="domain3">shiny.link</label>
+      </div>
     </div>
   );
 };

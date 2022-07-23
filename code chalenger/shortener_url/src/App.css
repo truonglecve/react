@@ -1,11 +1,25 @@
-
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: all .5s ease;
+}
 .container {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(16, 16, 117);
+  background: #21253f;
+  height: 100vh;
+}
+.container h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+.container h1 b{
+  background: #ff5722;
+    background-image: linear-gradient(90deg,#FF5722 0%,#FFB74D 100%),linear-gradient(to bottom,rgba(240,40,40,0) 0%,rgba(240,40,40,0) 100%);
+    padding: 5px 8px;
+    border-radius: 7px;
 }
 .inputContainer {
   background-color: white;
@@ -52,14 +66,47 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: bold;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  color: black;
-  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: white;
+  background: #21253f;
   border: none;
   cursor: pointer;
 }
-
+/* Domain Item */
+.domain {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.domain p {
+  display: inline-block;
+  width: 100px !important;
+}
+.domain input[type=radio] {
+  display: none;
+}
+.domain input[type=radio]:checked + label {
+  background-color: #21253f;
+  color: #fff;
+}
+.domain input {
+  background: #e1e1e1;
+  border-radius: 3px;
+  border: none;
+  padding: 6px 11px;
+  font-size: 24px;
+  margin-bottom: 12px;
+  margin-left: 4px;
+}
+.domain label {
+  margin-left: 15px;
+  display: inline-block;
+  padding: 4px 11px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #e1e1e1;
+}
 /* Result */
 .result {
   margin-top: 50px;
@@ -94,6 +141,7 @@
   color: var(--primary-color);
 }
 .noData {
+  margin-top: 20px;
   color: white;
   font-size: 1rem;
   padding: 10px;

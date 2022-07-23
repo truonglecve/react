@@ -37,7 +37,7 @@ const LinkResult = ({ inputValue }) => {
   }, [copied]);
 
   if (loading) {
-    return <p className="noData">Loading...</p>;
+    return <p className="noData">Vui lòng chờ trong giây lát</p>;
   }
   if (error) {
     return <p className="noData">Error - Please enter a valid Link</p>;
