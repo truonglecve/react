@@ -1,0 +1,117 @@
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(16, 16, 117);
+}
+.inputContainer {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.inputContainer div {
+  display: flex;
+  align-items: center;
+
+}
+.inputContainer h1 {
+  font-size: 3.5rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer div {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.inputContainer div p {
+  width: 200px;
+  height: 20px;
+}
+.inputContainer input {
+  width: 100%;
+  padding: 0.5rem 0.2rem 0.5rem 0;
+  text-indent: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: rgb(219, 213, 213);
+  margin-right: 20px;
+}
+.inputContainer input::placeholder {
+  font-size: 0.9rem;
+}
+.inputContainer button {
+  padding: 0 1rem;
+  height: 34px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: black;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* Result */
+.result {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+}
+.result div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result div p {
+  color: green;
+  font-size: 24px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+.result button {
+  padding: 0.5rem 1rem;
+  color: black;
+  cursor: pointer;
+  background: var(--primary-color);
+  border: none;
+}
+.result button.copied {
+  background: black;
+  color: var(--primary-color);
+}
+.noData {
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+/* background animate */
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
